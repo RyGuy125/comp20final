@@ -47,12 +47,12 @@ li a:hover {
 }
 
 img {
-    height: 20px;
+    height: 40px;
 }
 
 #bannerimage #bannerimage {
     width: 100%;
-    background-image: url(https://images.app.goo.gl/zQ51iVHUZrdPxiqJA);
+    background-image: src "dogwithgirl.jpg";
     height: 405px;
     background-color: purple;
     background-position: center;
