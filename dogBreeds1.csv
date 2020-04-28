@@ -1,0 +1,21 @@
+name,breed_group,size,color1,color2,coat_len,allergy_friendly,kid_friendly,energy_level,playfulness,shedding,exercise,bark_tendency,trainability,friendliness
+affenpinscher,Companion Dogs,small,black,silver,medium,false,false,4,4,1,3,2,3,3
+basenji,Hound Dogs,medium-small,fawn,white,short,true,true,5,2,1,5,1,1,4
+beagle,Hound Dogs,medium-small,fawn,black,short,false,true,4,5,3,4,5,1,5
+bouvier,Herding Dogs,medium-large,black,blonde,long,true,true,4,4,1,4,4,5,2
+boxer,Working Dogs,medium,fawn,brindle,short,false,true,5,5,4,5,3,3,4
+bulldog[english],Companion Dogs,medium-small,fawn,white,short,false,true,2,4,3,3,4,3,2
+chihuahua,Companion Dogs,small,tan,black,short,false,true,3,4,2,1,3,4,2
+chow,Working Dogs,medium-large,fawn,orange,medium,false,false,2,1,1,2,1,2,1
+collie[border],Herding Dogs,medium,brown,white,medium,false,true,5,5,3,5,2,5,3
+german Shephard,Herding Dogs,large,black,tan,medium,false,true,5,5,5,5,4,5,2
+greyhound,Hound Dogs,medium,grey,fawn,short,false,true,5,4,4,5,2,5,4
+husky,Working Dogs,medium,grey,white,medium,false,true,5,5,4,5,5,2,5
+newfoundland,Working Dogs,large,brown,tan,long,false,true,3,4,5,3,4,5,4
+pitbull,Terrier Dogs,medium,tan,black,short,false,false,4,5,4,4,3,4,1
+pug,Companion Dogs,medium-small,fawn,black,short,false,true,3,5,5,3,2,3,4
+retriever[golden],Companion Dogs,medium,blonde,golden,medium,false,true,5,5,5,5,3,5,4
+rottweiler,Working Dogs,medium,black,orange,short,false,false,4,5,4,4,4,4,2
+schnauzer[giant],Working Dogs,medium-large,black,grey,long,true,false,5,5,4,5,4,5,3
+shihtzu,Companion Dogs,small,white,grey,medium,true,true,1,4,3,2,2,3,4
+terrier[irish],Terrier Dogs,medium,orange,fawn,medium,true,true,5,5,4,4,4,1,1
