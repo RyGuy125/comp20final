@@ -2,23 +2,42 @@
 <html>
 <head>
 	<meta charset= "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href= "style.css" />
 	<style type="text/css">
-
+			#bannerimage {
+				max-height: 400px;
+				overflow: hidden;
+			}
 	</style>
+	<script src="jquery-3.4.1.js"></script>
+	<script language='javascript'>
+
+		$(document).ready(function () {
+				$("#motto").slideDown(1000);
+		});
+
+		$(document).ready(function () {
+				$("#bannerimage").slideDown(1000);
+		});
+			
+	</script>
 </head>
 
 
 <body bgcolor= "#ffffff"; >
 	<h1>Find My Dog</h1>
-	<h2>Take our questionaire to find your preferred dog breed in a location
-        near you!</h2>
-    <div id="bannerimage"></div>
+	<h2 id="motto" style="display:none">Take our questionaire to find your what
+        dog breed is best for you!</h2>
 
 	<div class="navbar">
 	  <li><a class="active" href="#home">Home  <img src = "doghouse.png"></a></li>
       <li><a href="questions.html">Find My Dog   <img src = "dog.png"></a></li>
       <li><a href="contact.html">Contact    <img src = "paw.png"></a></li>
+	</div>
+
+	<div>
+		<img id="bannerimage" src = "dogwithgirl.jpg">
 	</div>
 
 
