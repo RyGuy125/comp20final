@@ -38,7 +38,7 @@ h3 {
   li a {
     color: white;
     font-family: arial;
-    text-align: center;
+	text-align: center;
     display: block;
     width: 100%;
     background-color: #8b38c2;
@@ -56,12 +56,11 @@ img {
     height: 40px;
 }
 
-#bannerimage #bannerimage {
-    width: 100%;
-    background-image: src "dogwithgirl.";
-    height: 405px;
-    background-color: #8b38c2;
-    background-position: center;
+#bannerimage {
+    width: 98.5%;
+	height: 400px;
+	margin-left: 10px;
+	margin-right: 10px;
   }
 
 
