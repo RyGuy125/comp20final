@@ -4,6 +4,8 @@
 <head>
     <title>Dog Questions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset= "utf-8">
+	<link rel="stylesheet" type="text/css" href= "style.css" />
     <script src="jquery-3.4.1.js"></script>
 
     <style type="text/css">
@@ -17,28 +19,44 @@
         }
 
         .flex_container {
-            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
             align-content: space-between;
+            border-style: solid;
+            background-color: #8b38c2;
         }
 
         .flex_container>div {
+            text-align: center;
             width: 450px;
+            margin-left: 10px;
             margin-right: 10px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: black;
+            border-style: solid;
+            background-color: #a35fd3;
+            background-blend-mode: darken;
+            padding: 20px;
+            width: 50%;
         }
 
         p.flex_head {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 25px;
+        }
+
+        select {
+            font-size: 15px;
+        }
+
+        input[type=submit] {
+            font-size: 100px;
+            height: 100px;
+            width: 200px;
         }
     </style>
 
@@ -55,7 +73,20 @@
 
 </head>
 
-<body>
+<body bgcolor= "#ffffff"; >
+    <h1>Find My Dog</h1>
+	<h2>Take our questionaire to find your preferred dog breed in a location
+        near you!</h2>
+    <div id="bannerimage"></div>
+
+	<div class="navbar">
+	  <li><a class="active" href="#home">Home  <img src = "doghouse.png"></a></li>
+      <li><a href="questions.html">Find My Dog   <img src = "dog.png"></a></li>
+      <li><a href="contact.html">Contact    <img src = "paw.png"></a></li>
+    </div>
+    
+    <h3>Begin our questionaire below!</h3>
+
     <div id="page">
         <div id="page_wrapper">
 
@@ -65,7 +96,7 @@
 
 
                     <div>
-                        <p class="flex_head"><strong>Select your favorite breed group:</strong></p>
+                        <p class="flex_head"><strong>1) Select your favorite breed group:</strong></p>
                         <label for="breed_group">Choose a breed group:</label>
                         <select id="breed_group" name="breed_group">
                             <option value="Companion Dogs">Companion Dogs</option>
@@ -77,7 +108,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select your preferred dog size:</strong></p>
+                        <p class="flex_head"><strong>2) Select your preferred dog size:</strong></p>
                         <label for="size">Choose a size:</label>
                         <select id="size" name="size">
                             <option value="small">small</option>
@@ -89,7 +120,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select your favorite primary color:</strong></p>
+                        <p class="flex_head"><strong>3) Select your favorite primary color:</strong></p>
                         <label for="color1">Choose a color:</label>
                         <select id="color1" name="color1">
                             <option value="black">black</option>
@@ -107,7 +138,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select your favorite secondary color:</strong></p>
+                        <p class="flex_head"><strong>4) Select your favorite secondary color:</strong></p>
                         <label for="color2">Choose a color:</label>
                         <select id="color2" name="color2">
                             <option value="black">black</option>
@@ -125,7 +156,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select your preferred coat length:</strong></p>
+                        <p class="flex_head"><strong>5) Select your preferred coat length:</strong></p>
                         <label for="coat_len">Choose a length:</label>
                         <select id="coat_len" name="coat_len">
                             <option value="short">short</option>
@@ -135,7 +166,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select whether the dog should be allergy friendly:</strong></p>
+                        <p class="flex_head"><strong>6) Select whether the dog should be allergy friendly:</strong></p>
                         <label for="allergy_friendly">Choose yes or no:</label>
                         <select id="allergy_friendly" name="allergy_friendly">
                             <option value="true">Yes</option>
@@ -144,7 +175,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select whether the dog should be kid friendly:</strong></p>
+                        <p class="flex_head"><strong>7) Select whether the dog should be kid friendly:</strong></p>
                         <label for="kid_friendly">Choose yes or no:</label>
                         <select id="kid_friendly" name="kid_friendly">
                             <option value="true">Yes</option>
@@ -153,7 +184,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how energetic you would like your dog to be:</strong></p>
+                        <p class="flex_head"><strong>8) Select how energetic you would like your dog to be:</strong></p>
                         <label for="energy_level">Choose a value from 1-5:</label>
                         <select id="energy_level" name="energy_level">
                             <option value="1">1</option>
@@ -165,7 +196,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how playful you would like your dog to be:</strong></p>
+                        <p class="flex_head"><strong>9) Select how playful you would like your dog to be:</strong></p>
                         <label for="playfulness">Choose a value from 1-5:</label>
                         <select id="playfulness" name="playfulness">
                             <option value="1">1</option>
@@ -177,7 +208,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how much shedding you are okay with:</strong></p>
+                        <p class="flex_head"><strong>10) Select how much shedding you are okay with:</strong></p>
                         <label for="shedding">Choose a value from 1-5:</label>
                         <select id="shedding" name="shedding">
                             <option value="1">1</option>
@@ -189,7 +220,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how much you are willing to exercise your dog:</strong></p>
+                        <p class="flex_head"><strong>11) Select how much you are willing to exercise your dog:</strong></p>
                         <label for="exercise">Choose a value from 1-5:</label>
                         <select id="exercise" name="exercise">
                             <option value="1">1</option>
@@ -201,7 +232,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how much you want your dog to bark:</strong></p>
+                        <p class="flex_head"><strong>12) Select how much you want your dog to bark:</strong></p>
                         <label for="bark_tendency">Choose a value from 1-5:</label>
                         <select id="bark_tendency" name="bark_tendency">
                             <option value="1">1</option>
@@ -213,7 +244,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how trainable you would like your dog to be:</strong></p>
+                        <p class="flex_head"><strong>13) Select how trainable you would like your dog to be:</strong></p>
                         <label for="trainability">Choose a value from 1-5:</label>
                         <select id="trainability" name="trainability">
                             <option value="1">1</option>
@@ -225,7 +256,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Select how friendly you would like your dog to be:</strong></p>
+                        <p class="flex_head"><strong>14) Select how friendly you would like your dog to be:</strong></p>
                         <label for="friendliness">Choose a value from 1-5:</label>
                         <select id="friendliness" name="friendliness">
                             <option value="1">1</option>
@@ -237,7 +268,7 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>What is the most important attribute to you:</strong></p>
+                        <p class="flex_head"><strong>15) What is the most important attribute to you:</strong></p>
                         <label for="att">Choose an attribute:</label>
                         <select id="att" name="att">
                             <option value="breed_group">Breed Group</option>
@@ -258,23 +289,58 @@
                     </div>
 
                     <div>
-                        <p class="flex_head"><strong>Value for that attribute:</strong></p>
+                        <p class="flex_head"><strong>15-b) Value for that attribute if applicable:</strong></p>
                         <input type="text" id="val" name="val">
                     </div>
 
                 </div>
 
                 <div>
-                   <input type="submit" value="Submit" /> 
+                   <input type="submit" value="What's my breed?"/> 
                 </div>
                 
             </form>
         </div>
 
 
-        <footer>
-            Industry: Plumbing <br>
-            Headquarters: 288 Boston Ave, Medford, MA, 02155
+        <footer class="footer-distributed">
+ 
+            <div class="footer-left">
+                <h3>Find My Dog</h3>
+        
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    |
+                    <a href="questions.html">Find My Dog</a>
+                    |
+                    <a href="login.html">Contact</a>
+                </p>
+        
+                <p class="footer-company-name">© FindMyDog.com</p>
+            </div>
+        
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                      <p>Address: 288 Boston Ave,<br> &emsp;&emsp;&emsp;&emsp; Medford, MA, 02155</p>
+                </div>
+        
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>Phone Number: 617-FIN-DDOG</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>Email: findmydog@business.com</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    We offer a free sercvice to find the dogs you want</p>
+                <div class="social-media">
+                    Follow us on Facebook, Instagram, and Tik Tok!
+                </div>
+            </div>
         </footer>
     </div>
 </body>
