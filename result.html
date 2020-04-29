@@ -50,6 +50,7 @@
                     //alert(result)
                     document.getElementById("dogpic").src = result[0]
                     document.getElementById("dogname").innerHTML = dog_breed
+		    print_description(dog_breed);
 
                 }
                 else if (request.readyState == 4 && request.status != 200) {
@@ -69,6 +70,16 @@
             request.send();
             console.log("4 - Request sent");
         }
+	
+	    
+	function print_description(dog_breed) {
+		if(dog_breed == "bouvier)
+		   document.getElementById("dogname").innerHTML = "SUP";
+		else
+		   document.getElementById("dogname").innerHTML = "DIDNT WORK";
+		 
+	}
+		    
     </script>
 </head>
 
@@ -79,6 +90,7 @@
     <div id="data">Loading...</div>
     <img id="dogpic" src="" alt="loading">
     <div id="dogname">Loading</div>
+    <div id="dogdescipt">Loading</div>
 
 </body>
 
