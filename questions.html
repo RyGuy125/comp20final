@@ -38,10 +38,15 @@
             margin-bottom: 40px;
             color: black;
             border-style: solid;
-            background-color: #a35fd3;
+            border-width: 5px;
+            background-color: #e7d6f5;
             background-blend-mode: darken;
             padding: 20px;
             width: 50%;
+        }
+
+        .flex_container>div:hover {
+            background-color: #a35fd3;
         }
 
         p.flex_head {
@@ -54,9 +59,8 @@
         }
 
         input[type=submit] {
-            font-size: 100px;
-            height: 100px;
-            width: 200px;
+            width: 300px;
+            margin-top: 10px;
         }
     </style>
 
@@ -75,21 +79,20 @@
 
 <body bgcolor= "#ffffff"; >
     <h1>Find My Dog</h1>
-	<h2>Take our questionaire to find your preferred dog breed in a location
-        near you!</h2>
-    <div id="bannerimage"></div>
+	<h2 id="motto" style="display:none">Take our questionaire to find your what
+        dog breed is best for you!</h2>
 
 	<div class="navbar">
-	  <li><a class="active" href="#home">Home  <img src = "doghouse.png"></a></li>
+	  <li><a class="active" href="index.html">Home  <img src = "doghouse.png"></a></li>
       <li><a href="questions.html">Find My Dog   <img src = "dog.png"></a></li>
       <li><a href="contact.html">Contact    <img src = "paw.png"></a></li>
     </div>
+
     
     <h3>Begin our questionaire below!</h3>
 
     <div id="page">
         <div id="page_wrapper">
-
 
             <form name="from1" method="GET" action="https://dog-database-query.herokuapp.com/">
                 <div class='flex_container' id='flex_container'>
@@ -293,11 +296,12 @@
                         <input type="text" id="val" name="val">
                     </div>
 
+                    <div>
+                        <input type="submit" value="What's my breed?" style="font-size: 25px;"/> 
+                     </div>
+
                 </div>
 
-                <div>
-                   <input type="submit" value="What's my breed?"/> 
-                </div>
                 
             </form>
         </div>
