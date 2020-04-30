@@ -3,21 +3,130 @@
 <head>
 	<meta charset= "utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href= "style.css" />
+	<link rel="stylesheet" type="text/css" href= "/Users/ryandreher/Desktop/Comp20/Final/styles.css" />
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
 	<style type="text/css">
 			#bannerimage {
 				max-height: 400px;
 				overflow: hidden;
 			}
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			  margin: 0;
+			  background-color: #F4EDF9;
+			}
+
+			html {
+			  box-sizing: border-box;
+			}
+
+			p {
+				font-size: 30px;
+			}
+
+			*, *:before, *:after {
+			  box-sizing: inherit;
+			}
+
+			.phrase {
+				font-size: 36px;
+				text-align: center;
+				font-family: 'Sofia';
+			}
+
+			.title {
+				font-size: 30px;
+				text-align: center;
+				font-family: 'Acme';
+			}
+
+			.row {
+			    overflow: hidden;
+			    list-style-type: none;
+			    margin-left: 10px;
+			    padding: 0px;
+			    overflow-wrap: break-word;
+			    word-wrap: break-word;
+  				hyphens: auto;
+			}
+
+			.column {
+			  float: left;
+			  width: 33.3%;
+			  margin-bottom: 16px;
+			  padding: 0 8px;
+			}
+
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			  margin: 8px;
+			}
+
+			.card .one {
+				background-color: #95debc;
+				background-image: linear-gradient(to right, #95debc, #9bb1de);
+			  	padding: 16px;
+			}
+
+			.card .two {
+				background-color: #9bb1de;
+			  	padding: 16px;
+			}
+
+			.card .three {
+				background-color: #d199ab;
+				background-image: linear-gradient(to right, #9bb1de, #d199ab);
+			  	padding: 16px;
+			}
+
+			.about-section {
+			  padding: 50px;
+			  text-align: center;
+			  background-color: #474e5d;
+			  color: white;
+			}
+
+			.container {
+			  padding: 0 16px;
+			}
+
+			.container::after, .row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+
+			.button {
+			  font-size: 40px;
+			  border: none;
+			  outline: 0;
+			  margin: 12px;
+			  padding: 8px;
+			  box-shadow: 0 4px 8px 0 rgba(0.2, 0, 0, 0.2);
+			  color: white;
+			  background-color: #C1A6B4;
+			  text-align: center;
+			  cursor: pointer;
+			  width: 20%;
+			  height: 100px;
+			}
+
+			.button:hover {
+			  background-color: #A46ABC;
+			}
+
 	</style>
 	<script src="jquery-3.4.1.js"></script>
 	<script language='javascript'>
 
 		$(document).ready(function () {
+				$("#motto").show();
 				$("#motto").slideDown(1000);
 		});
 
 		$(document).ready(function () {
+				$("#bannerimage").show();
 				$("#bannerimage").slideDown(1000);
 		});
 			
@@ -25,8 +134,9 @@
 </head>
 
 
-<body bgcolor= "#ffffff"; >
-	<h1>Find My Dog</h1>
+<body>
+
+	<h1 style="font-family: 'Sofia';">Find My Dog</h1>
 	<h2 id="motto" style="display:none">Take our questionaire to find your what
         dog breed is best for you!</h2>
 
@@ -40,6 +150,52 @@
 		<img id="bannerimage" src = "dogwithgirl.jpg">
 	</div>
 
+	<div class="about-section">
+	  <h1 style="color: #d3a1f0; font-size: 60px; font-family: 'Sofia';">Mission</h1>
+	  <p>We wish to make the process of finding man's best friend a bit easier by using this simple service.</p>
+	  <p>A dog is a loyal companion that leaves a life-long mark on us because of their love. That love is different among every breed and their rearing, so we'd like to allow people to use our service to find out which type is best for you.</p>
+	</div>
+
+	<h2 style="text-align:center; font-size:40px;">Just Three Simple Steps</h2>
+
+	<div class="row">
+	  <div class="column">
+	    <div class="card">
+	    	<div class="one">
+		      <div class="container">
+		        <div class="phrase">Connect</div>
+		        <p class="title">Search for your pet using our quick and easy online questionnaire</p>
+		      </div>
+		    </div>
+	    </div>
+	  </div>
+
+	  <div class="column">
+	    <div class="card">
+	    	<div class="two">
+		      <div class="container">
+		        <div class="phrase">Adopt</div>
+		        <p class="title">Find a breeder close to you that has the breed type you just received</p>
+		      </div>
+		    </div>
+	    </div>
+	  </div>
+	  
+	  <div class="column">
+	    <div class="card">
+	    	<div class="three">
+	      		<div class="container">
+			        <div class="phrase">Share the love</div>
+			        <p class="title">Pick up your new dog. And don't forget to be compassionate to your pets!</p>
+		  		</div>
+		  	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<div style="text-align: center; padding: 16px;">
+		<button class="button" href="questions.html">Start Now!</button>
+	</div>
 
 
 	<footer class="footer-distributed">
@@ -81,8 +237,6 @@
 			</div>
 		</div>
 	</footer>
-
-
 
 </body>
 </html>
